@@ -9,15 +9,38 @@
  * @since 2.2.0
  */
 ?>
-
-		</div><!-- .row -->
 	</div><!-- #wrapper -->
 
 	<footer id="footer" role="contentinfo">
 		<div class="container">
-			<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'odin' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'odin' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?></p>
-		</div><!-- .container -->
-	</footer><!-- #footer -->
+
+			<div class="content-copyright col-sm-3">
+				<h4>Copyright</h4>
+				<p>
+					Copyright 2016 - Click Dengue Aplicativo de desenvolvimento<br/>
+					<a href="#" target="_blank" title="">Termos de Uso</a>
+				</p>
+			</div>
+
+			<div class="content-smm col-sm-offset-6 col-sm-3">
+				<h4>Siga-nos</h4>
+				<!-- <ul>
+					<li>
+						<a href="#" title="Facebook">F</a>
+					</li>
+					<li>
+						<a href="#" title="Twitter">T</a>
+					</li>
+					<li>
+						<a href="#" title="LinkedIn">L</a>
+					</li>
+					<li>
+						<a href="#" title="Instagram">I</a>
+					</li>
+				</ul> -->
+			</div>
+		</div>
+	</footer>
 
 	<?php wp_footer(); ?>
 </body>

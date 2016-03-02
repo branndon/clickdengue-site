@@ -20,6 +20,8 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 
+add_filter('show_admin_bar', '__return_false'); // remove admin bar top
+
 /**
  * Odin Classes.
  */
