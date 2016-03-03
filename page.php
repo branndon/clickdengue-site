@@ -12,6 +12,10 @@
 
 get_header(); ?>
 
+<div class="img-featured">
+	<h2 class="container sintony">FOCOS</h2>
+</div>
+
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
 			<?php
