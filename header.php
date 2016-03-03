@@ -54,7 +54,8 @@
 			</div>
 
 			<nav class="main-menu col-sm-10">
-				<ul>
+				<?php wp_nav_menu( array( 'menu' => 'header-menu' ) ); ?>
+				<!-- <ul>
 					<li>
 						<a href="#">Ínicio</a>
 					</li>
@@ -73,7 +74,7 @@
 					<li>
 						<a href="#">Setor Público</a>
 					</li>
-				</ul>
+				</ul> -->
 			</nav>
 		</div>
 	</header>

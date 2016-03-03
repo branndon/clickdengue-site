@@ -10,29 +10,24 @@
  * @since 2.2.0
  */
 
-get_header(); ?>
+get_header();
 
-<div class="img-featured">
-	<h2 class="container sintony">FOCOS</h2>
+	if ( has_post_thumbnail() ) {
+		$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	} else {
+		$url = get_template_directory_uri().'/assets/images/topo-default.jpg';
+	}
+?>
+
+<div class="img-featured" style="background: url(<?php echo $url; ?>) top center no-repeat;">
+	<h1 class="container sintony"><?php the_title(); ?></h1>
 </div>
 
-	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
-
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
-
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				endwhile;
-			?>
-
-	</main><!-- #main -->
+	<main>
+		<?php  while ( have_posts() ) : the_post(); ?>
+			<p><?php the_content(); ?></p>
+		<?php endwhile; ?>
+	</main>
 
 <?php
 get_footer();
