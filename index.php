@@ -22,7 +22,6 @@ get_header(); ?>
 		<section class="content-news container">
 			<h2>Fique por dentro</h2>
 			<ul class="list-news">
-				
 				<li class="col-sm-4">
 					<a href="#" target="_blank">
 						<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/teste-fiquepordentro.jpg" alt="" />
@@ -31,7 +30,6 @@ get_header(); ?>
 					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim....</p>
 				</li>
-
 				<li class="col-sm-4">
 					<a href="#" target="_blank">
 						<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/teste-fiquepordentro.jpg" alt="" />
@@ -40,7 +38,6 @@ get_header(); ?>
 					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim....</p>
 				</li>
-
 				<li class="col-sm-4">
 					<a href="#" target="_blank">
 						<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/teste-fiquepordentro.jpg" alt="" />
@@ -60,7 +57,8 @@ get_header(); ?>
 		
 		<!-- Baixe nosso aplicativo -->
 		<section class="content-download container">
-			
+			app-smartphone
+			<div class="content-title"></div>
 		</section>
 		
 		<!-- Quem já informou um foco -->

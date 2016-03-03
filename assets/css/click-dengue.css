@@ -85,7 +85,7 @@ body{
 - Header			   |
 ---------------------- */
 	#header{
-		min-height: 90px;
+		min-height: 60px;
 		border-bottom: 2px solid #1b1b1b;
 		background: rgba(222,47,47,1);
 		background: -moz-linear-gradient(left, rgba(222,47,47,1) 0%, rgba(222,47,47,1) 22%, rgba(222,47,47,1) 22%, rgba(255,255,255,1) 22%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%);
@@ -98,14 +98,14 @@ body{
 	}
 
 	#header .container{
-		max-height: 90px;
+		max-height: 60px;
 	}
 		
 		/* logo */
 		#header .content-logo{
 			background: #de302f;
-			min-height: 90px;
-			padding: 40px 30px 20px 10px;
+			min-height: 60px;
+			padding: 20px 30px 20px 10px;
 		}
 		
 		/* Main menu */
@@ -121,7 +121,7 @@ body{
 			font-size: 14px;
 			color: #586165;
 			display: block;
-			padding: 40px 30px 20px 30px;
+			padding: 20px 30px 20px 30px;
 			font-weight: bold;
 			text-transform: uppercase;
 		}
@@ -216,7 +216,7 @@ body{
 - footer			   |
 ---------------------- */
 	#footer{
-		background: url(../images/footer-bg.jpg) top center repeat;
+		background: url(../images/footer-bg.png) top center repeat;
 		width: 100%;
 		height: auto;
 		min-height: 190px;
@@ -249,10 +249,26 @@ body{
 
 		/* Follow us */
 		#footer .content-smm{}
-		#footer .content-smm ul {}
+		#footer .content-smm ul {
+			padding: 0;
+		}
 		#footer .content-smm ul li {
 			display: block;
 			float: left;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		#footer .content-smm ul li:first-child{
+			margin-left: 0;
 		}
 		#footer .content-smm ul li a {
+			padding: 10px;
+			background: #676767;
+			border-radius: 50%;
+			color: #313131;
+			display: inline-block;
+		}
+
+		#footer .content-smm ul li a:hover{
+			background: #7c7c7c;
 		}

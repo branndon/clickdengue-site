@@ -18,6 +18,7 @@
 	<!-- Fontes -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+	<link href='<?php bloginfo( 'template_directory' ); ?>/assets/css/fontello.css' rel='stylesheet' type='text/css'>
 
 	<?php if ( ! get_option( 'site_icon' ) ) : ?>
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />

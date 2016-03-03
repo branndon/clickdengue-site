@@ -24,20 +24,28 @@
 
 			<div class="content-smm col-sm-offset-6 col-sm-3">
 				<h4>Siga-nos</h4>
-				<!-- <ul>
+				<ul>
 					<li>
-						<a href="#" title="Facebook">F</a>
+						<a href="#" title="Facebook">
+							<i class="icon-facebook"></i>
+						</a>
 					</li>
 					<li>
-						<a href="#" title="Twitter">T</a>
+						<a href="#" title="Twitter">
+							<i class="icon-twitter"></i>
+						</a>
 					</li>
 					<li>
-						<a href="#" title="LinkedIn">L</a>
+						<a href="#" title="LinkedIn">
+							<i class="icon-linkedin"></i>
+						</a>
 					</li>
 					<li>
-						<a href="#" title="Instagram">I</a>
+						<a href="#" title="Instagram">
+							<i class="icon-instagram"></i>
+						</a>
 					</li>
-				</ul> -->
+				</ul>
 			</div>
 		</div>
 	</footer>
