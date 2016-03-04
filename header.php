@@ -22,7 +22,14 @@
 	<link href='<?php bloginfo( 'template_directory' ); ?>/assets/css/fontello.css' rel='stylesheet' type='text/css'>
 	
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>The Circle</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	<script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>The Circle</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+	</script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready( function(){
+		// alert("foi!");
+	});
+	</script>
 
 	<?php if ( ! get_option( 'site_icon' ) ) : ?>
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
@@ -35,6 +42,7 @@
 
 	<!-- Thema - Click Dengue -->
 	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/assets/css/click-dengue.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/assets/css/eve-style.css" type="text/css" />
 
 </head>
 
@@ -53,28 +61,20 @@
 				</a>
 			</div>
 
-			<nav class="main-menu col-sm-10">
-				<?php wp_nav_menu( array( 'menu' => 'header-menu' ) ); ?>
-				<!-- <ul>
-					<li>
-						<a href="#">Ínicio</a>
-					</li>
-					<li>
-						<a href="#">Blog</a>
-					</li>
-					<li>
-						<a href="#">Focos Informados</a>
-					</li>
-					<li>
-						<a href="#">Aplicativo</a>
-					</li>
-					<li>
-						<a href="#">Contato</a>
-					</li>
-					<li>
-						<a href="#">Setor Público</a>
-					</li>
-				</ul> -->
+			<!-- <nav class="main-menu col-sm-10"> -->
+				<?php // wp_nav_menu( array( 'menu' => 'header-menu' ) ); ?>
+			<!-- </nav> -->
+			<nav class="main-menu col-sm-10 navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<?php wp_nav_menu( array( 'menu' => 'header-menu' ) ); ?>
+				</div>
 			</nav>
 		</div>
 	</header>

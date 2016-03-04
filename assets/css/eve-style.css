@@ -1,0 +1,196 @@
+input{
+  outline: none!important;
+}
+
+/*-------------------------------
+Efeios de Botões
+---------------------------------*/
+
+/*-------------------------------
+HOME
+---------------------------------*/
+.menu-header-menu-container{
+  line-height: 2px;
+}
+
+#header{
+  border-bottom: 0!important;
+}
+
+#home .content-download{
+    background: #f7f7f7;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.20);
+}
+
+#home .content-main:after{
+    background: url(../images/seta.png);
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 48px;
+    height: 28px;
+    bottom: 0;
+    position: absolute;
+    margin: 0 auto;
+}
+
+#home
+.content-main {
+    background: url(../images/home-main.jpg) top left no-repeat;
+    width: 100%;
+    height: 531px;
+    background-size: auto 100%;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*#home .content-news{
+   margin-top: 0;
+}*/
+
+#home .content-main .posistionText {
+    max-width: 540px;
+    max-height: 300px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom:150px;
+}
+
+/* Sweep To Top */
+.hvr-sweep-to-top-red {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top-red:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #de302f;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top-red:hover, .hvr-sweep-to-top-red:focus, .hvr-sweep-to-top-red:active {
+  color: white;
+  text-decoration: none;
+}
+.hvr-sweep-to-top-red:hover:before, .hvr-sweep-to-top-red:focus:before, .hvr-sweep-to-top-red:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+/* Sweep To Top */
+.hvr-sweep-to-top-white {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top-white:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top-white:hover, .hvr-sweep-to-top-white:focus, .hvr-sweep-to-top-white:active {
+  color: #de302f!important;
+  text-decoration: none;
+}
+.hvr-sweep-to-top-white:hover:before, .hvr-sweep-to-top-white:focus:before, .hvr-sweep-to-top-white:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.verMais{
+  font-family: 'Sintony';
+}
+
+.verMais:hover {
+  font-family: 'Sintony';
+  color: white!important;
+  border-color: #de302f!important;
+  text-decoration: none!important;
+}
+
+
+#footer .content-smm a{ transition: all 1s; }
+
+#footer .content-smm a:hover{
+    transition: all 1s!impor;
+    background:#de302f!important;
+}
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (max-width: 768px) {
+#home .content-main { background-position: right!important; }
+}
+ 
+/* 
+ Com uma largura mínima de 992 pixels. Monitores por exemplo.
+*/
+@media screen and (max-width: 992px) {
+  #home .content-download .content-smartphone img { display:none; }
+#home .content-main { background-position: right!important; }
+}
+ 
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (max-width: 1200px) {
+#home .content-main { background-position: right!important; }
+}

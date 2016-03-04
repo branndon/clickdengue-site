@@ -6,21 +6,18 @@
  * @since 2.2.0
  */
 
-get_header(); ?>
+get_header();
 
-	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
+	$url = get_template_directory_uri().'/assets/images/topo-404.jpg';
+?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'odin' ); ?></h1>
-			</header>
+<div class="img-featured" style="background: url(<?php echo $url; ?>) top center no-repeat; min-height: 200px;">
+	<h1 class="container sintony">404</h1>
+</div>
 
-			<div class="page-content">
-				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'odin' ); ?></p>
+<main class="content-main container">
+	<p>OPS! ACHO QUE ALGO DEU ERRADO!</p>
+	<p>a página pesquisada não foi encontrada :(</p>
+</main>
 
-				<?php get_search_form(); ?>
-			</div><!-- .page-content -->
-
-	</main><!-- #main -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

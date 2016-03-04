@@ -25,7 +25,7 @@
 		<?php endwhile; ?>
 		
 		<div class="content-forms col-sm-offset-3 col-sm-6">
-			<form name="contato" id="formulario" method="post" action="<?php bloginfo( 'template_directory' ); ?>/includes/FILE.php">
+			<form name="contato" id="formulario" method="post" action="<?php bloginfo( 'template_directory' ); ?>/includes/send-contato.php">
 				<div class="row">
 					<div class="col-sm-3">
 						<label for="nome">Nome*</label>
