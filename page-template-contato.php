@@ -12,7 +12,7 @@
 	} else {
 		$url = get_template_directory_uri().'/assets/images/topo-default.jpg';
 	}
-?>
+?> 
 
 <div class="img-featured" style="background: url(<?php echo $url; ?>) top center no-repeat;">
 	<h1 class="container sintony"><?php the_title(); ?></h1>
