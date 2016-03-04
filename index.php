@@ -36,7 +36,7 @@ get_header(); ?>
 		<section class="content-news container">
 			<h2>Fique por dentro</h2>
 			<ul class="list-news">
-				<li class="col-sm-4">
+				<!-- <li class="col-sm-4">
 					<a href="#" target="_blank">
 						<img src="<?php bloginfo( 'template_directory' ); ?>/assets/images/teste-fiquepordentro.jpg" alt="" />
 					</a>
@@ -59,7 +59,8 @@ get_header(); ?>
 					<p class="tags"><i class="icon-pencil"></i> Categorias: <a href="#" target="_blank">Estado de SP</a> <a href="#" target="_blank">Santos</a></p>
 					<h3 class="roboto_slab">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h3>
 					<p class="roboto_slab">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim....</p>
-				</li>
+				</li> -->
+				<?php show_posts(3); ?>
 			</ul>
 			
 			<div class="clear"></div>

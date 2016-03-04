@@ -23,7 +23,7 @@ get_header();
 	<h1 class="container sintony"><?php the_title(); ?></h1>
 </div>
 
-	<main>
+	<main class="container">
 		<?php  while ( have_posts() ) : the_post(); ?>
 			<p><?php the_content(); ?></p>
 		<?php endwhile; ?>

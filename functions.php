@@ -305,3 +305,83 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/functions.php';
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
+
+
+function show_posts( $cat ) {
+
+	$destaque = new WP_Query( array(
+		'order_by'			=> 'date',
+		'order'				=> 'ASC',
+		'post_type'			=> 'any',
+		'posts_per_page'	=> 6,
+		'cat'				=> $cat
+	) );
+
+	$main_content = "";
+	$img_featured = "";
+
+	if (get_the_content()) {
+		$main_content = wp_html_excerpt( wp_strip_all_tags( get_the_content() ), 150, '...' );
+	} else {
+		$main_content = "Nenhum conteúdo cadastrado.";
+	}
+
+	if( $destaque->have_posts() ) {
+		while( $destaque->have_posts() ) {
+			$destaque->the_post();
+			echo '<li class="col-sm-4">';
+				echo '<a href="' . get_permalink() . '" target="_blank">';
+					if (has_post_thumbnail()){
+						the_post_thumbnail( array( 'alt' => get_the_title(), 'title' => get_the_title() ) );
+					} else {
+						echo '<img src="' . get_bloginfo( 'template_directory' ) . '/assets/images/teste-fiquepordentro.jpg" alt="' . get_the_title() . '" title="' . get_the_title() . '" />';
+					}
+				echo '</a>';
+				echo '<p class="tags"><i class="icon-pencil"></i> Categorias: <a href="#" target="_blank">Estado de SP</a> <a href="#" target="_blank">Santos</a></p>';
+				echo '<h3 class="roboto_slab">'. get_the_title() .'</h3>';
+				echo '<p class="roboto_slab">'. $main_content .'</p>';
+			echo '</li>';
+		}
+	} else {
+		echo "<p>Nenhum post encontrado.</p>";
+	}
+
+	// echo '<div id="destaque-maquina">';
+	// 	echo '<div class="texto">';
+	// 		echo '<h3><strong>Máquina de Sorvete</strong> Sorvety</h3>';
+	// 		echo category_description( $cat );
+	// 	echo '</div>';
+
+	// 		$destaque = new WP_Query( array(
+	// 			'order_by'			=> 'date',
+	// 			'order'				=> 'ASC',
+	// 			'post_type'			=> 'any',
+	// 			'posts_per_page'	=> 6,
+	// 			'cat'				=> $cat
+	// 		) );
+
+	// 		if( $destaque->have_posts() ) {
+	// 			echo '<ul>';
+	// 			while( $destaque->have_posts() ) {
+	// 				$destaque->the_post();
+	// 				echo '<li>';
+
+	// 					echo '<a href="' . get_permalink() . '">';
+	// 					if ( has_post_thumbnail() )
+	// 						the_post_thumbnail( 'thumbM', array( 'alt' => get_the_title(), 'title' => get_the_title() ) );
+	// 					else
+							// echo '<img src="' . get_bloginfo( 'template_directory' ) . '/images/img-thumbM.jpg" alt="' . get_the_title() . '" title="' . get_the_title() . '" />';
+	// 					echo '</a>';
+
+	// 					echo '<p><a href="' . get_permalink() . '">' . get_the_title() . '</a></p>';
+	// 				echo'</li>';
+	// 			}
+	// 			echo '</ul>';
+	// 		}
+	// 		else
+
+	// 	echo '</div>';
+	// echo '</div>';
+
+	// wp_reset_postdata();
+}
